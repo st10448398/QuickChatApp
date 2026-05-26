@@ -9,7 +9,7 @@
 | **Module Code** | PROG5121 |
 | **Assignment** | POE Part 2 |
 | **Module Name** | Programming 1A |
-| **Institution** | [Your Institution Name] |
+| **Institution** | ROSEBANK INTERNATIONAL |
 | **Date** | 2026 |
 
 ---
@@ -19,16 +19,8 @@
 2. [Features](#features)
 3. [Part 1: Registration & Login](#part-1-registration--login)
 4. [Part 2: Sending Messages](#part-2-sending-messages)
-5. [Technology Stack](#technology-stack)
-6. [Installation Guide](#installation-guide)
-7. [How to Run](#how-to-run)
-8. [Testing](#testing)
-9. [JSON Storage](#json-storage)
-10. [Git & GitHub](#git--github)
-11. [CI/CD Pipeline](#cicd-pipeline)
-12. [Folder Structure](#folder-structure)
-13. [References](#references)
-14. [License](#license)
+5. [References](#references)
+6. [License](#license)
 
 ---
 
@@ -161,4 +153,91 @@ text
 | **GitHub Actions** | N/A | CI/CD automation |
 | **NetBeans** | 12.0+ | IDE |
 
+📚 References
+For a complete list of references, see REFERENCES.md
 
+Key References:
+Oracle Java Documentation - Regex patterns for validation
+
+JSON-java Library - JSON implementation for message storage
+
+JUnit 5 Documentation - Unit testing framework
+
+Git Documentation - Version control system
+
+GitHub Actions Docs - CI/CD pipeline automation
+
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+License Type	MIT License
+Author	KD MACATE
+Student Number	ST10449398
+Module	PROG5121 - Programming 1A
+Assignment	POE Part 2
+Year	2026
+Usage	Educational purposes only
+You are free to:
+✅ Use this code for learning purposes
+
+✅ Reference this code in academic work
+
+✅ Share this code with attribution
+
+You may NOT:
+❌ Submit this code as your own work
+
+❌ Use for commercial purposes without permission
+
+❌ Remove attribution to the original author
+
+🙏 Acknowledgments
+Module instructors for guidance and support
+
+Oracle for Java documentation and resources
+
+Open source community for JSON library
+
+GitHub for free student developer pack
+
+Stack Overflow community for technical solutions
+
+📧 Contact
+Author	KD MACATE
+Student Number	ST10449398
+Module	PROG5121 - Programming 1A
+Assignment	POE Part 2
+Institution	ROSEBANK INTERNATIONAL
+
+
+✅ Completion Checklist
+Part 1: Registration and Login Feature
+
+Part 2: Sending Messages Feature
+
+Unit Tests (23 tests covering all functionality)
+
+Git Version Control Setup
+
+GitHub Repository Created
+
+JSON Storage Implementation
+
+README Documentation Complete
+
+References Document Created
+
+LICENSE File Added
+
+.gitignore Configured
+
+Last Updated: 2026
+Version: 2.0
+Status: ✅ Complete and Fully Functional
+
+🎓 Declaration
+I hereby declare that this project is my original work. All external libraries and references have been properly cited. This project was completed as part of PROG5121 Programming 1A POE Part 2.
+
+Signed: KD MACATE
+Student Number: ST10449398
+Date: 2026
