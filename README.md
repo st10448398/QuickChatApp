@@ -27,9 +27,8 @@
 10. [Git & GitHub](#git--github)
 11. [CI/CD Pipeline](#cicd-pipeline)
 12. [Folder Structure](#folder-structure)
-13. [Screenshots](#screenshots)
-14. [References](#references)
-15. [License](#license)
+13. [References](#references)
+14. [License](#license)
 
 ---
 
@@ -162,17 +161,4 @@ text
 | **GitHub Actions** | N/A | CI/CD automation |
 | **NetBeans** | 12.0+ | IDE |
 
----
 
-## 💻 Installation Guide
-
-### Prerequisites
-- Java JDK 17 or later installed
-- Apache NetBeans IDE (or any Java IDE)
-- Git installed (for version control)
-- GitHub account (for remote repository)
-
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/YOUR_USERNAME/ChatApp.git
-cd ChatApp
