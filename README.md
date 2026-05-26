@@ -157,15 +157,12 @@ text
 For a complete list of references, see REFERENCES.md
 
 Key References:
-Oracle Java Documentation - Regex patterns for validation
-
 JSON-java Library - JSON implementation for message storage
 
 JUnit 5 Documentation - Unit testing framework
-
 Git Documentation - Version control system
-
 GitHub Actions Docs - CI/CD pipeline automation
+
 
 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -177,29 +174,22 @@ Module	PROG5121 - Programming 1A
 Assignment	POE Part 2
 Year	2026
 Usage	Educational purposes only
+
 You are free to:
 ✅ Use this code for learning purposes
-
 ✅ Reference this code in academic work
-
 ✅ Share this code with attribution
 
 You may NOT:
 ❌ Submit this code as your own work
-
 ❌ Use for commercial purposes without permission
-
 ❌ Remove attribution to the original author
+
 
 🙏 Acknowledgments
 Module instructors for guidance and support
-
-Oracle for Java documentation and resources
-
 Open source community for JSON library
-
 GitHub for free student developer pack
-
 Stack Overflow community for technical solutions
 
 📧 Contact
@@ -212,24 +202,20 @@ Institution	ROSEBANK INTERNATIONAL
 
 ✅ Completion Checklist
 Part 1: Registration and Login Feature
-
 Part 2: Sending Messages Feature
-
 Unit Tests (23 tests covering all functionality)
-
 Git Version Control Setup
-
 GitHub Repository Created
-
 JSON Storage Implementation
-
 README Documentation Complete
-
 References Document Created
+
 
 LICENSE File Added
 
+
 .gitignore Configured
+
 
 Last Updated: 2026
 Version: 2.0
