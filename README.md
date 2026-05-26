@@ -157,15 +157,14 @@ text
 For a complete list of references, see REFERENCES.md
 
 Key References:
-Oracle Java Documentation - Regex patterns for validation
 
-JSON-java Library - JSON implementation for message storage
+-JSON-java Library - JSON implementation for message storage
 
-JUnit 5 Documentation - Unit testing framework
+-JUnit 5 Documentation - Unit testing framework
 
-Git Documentation - Version control system
+-Git Documentation - Version control system
 
-GitHub Actions Docs - CI/CD pipeline automation
+-GitHub Actions Docs - CI/CD pipeline automation
 
 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -193,8 +192,6 @@ You may NOT:
 
 🙏 Acknowledgments
 Module instructors for guidance and support
-
-Oracle for Java documentation and resources
 
 Open source community for JSON library
 
