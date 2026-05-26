@@ -1,0 +1,101 @@
+# References for ChatApp - PROG5121 POE Part 2
+
+## Author Information
+- **Name:** KD MACATE
+- **Student Number:** ST10449398
+- **Module Code:** PROG5121
+- **Assignment:** POE Part 2
+- **Date:** 25/05/2026
+
+## Code References
+
+### 1. Regular Expression for Cell Phone Validation
+The regex pattern used for South African cell phone number validation was adapted from international phone number formatting standards.
+
+**Source:** Oracle Java Documentation - Regular Expressions
+**URL:** https://docs.oracle.com/javase/tutorial/essential/regex/
+**Usage:** Used in `Login.java` and `MessageService.java` for cell phone number validation
+**Pattern:** `^\\+27[0-9]{9}$`
+
+### 2. JSON Library (org.json)
+The JSON implementation uses the JSON-java library for storing messages in JSON format.
+
+**Library:** JSON-java (org.json)
+**Version:** 20230227
+**URL:** https://github.com/stleary/JSON-java
+**License:** Public Domain (The JSON License)
+**Usage:** Used in `MessageService.java` for storing message data to messages.json
+**Implementation Date:** 2026
+
+### 3. JUnit 5 Testing Framework
+Unit tests are implemented using JUnit 5 (Jupiter).
+
+**Source:** JUnit 5 Official Documentation
+**URL:** https://junit.org/junit5/docs/current/user-guide/
+**Usage:** Used in `LoginTest.java` and `MessageServiceTest.java`
+**Annotations Used:** @Test, @BeforeEach, @AfterEach
+
+### 4. Git Version Control
+Version control implemented using Git and hosted on GitHub.
+
+**Source:** Git Documentation
+**URL:** https://git-scm.com/doc
+**GitHub Repository:** [Your GitHub Repository URL]
+**Branching Strategy:** Main branch for production, feature branches for development
+
+### 5. GitHub Actions CI/CD
+Continuous Integration implemented using GitHub Actions for automated testing.
+
+**Source:** GitHub Actions Documentation
+**URL:** https://docs.github.com/en/actions
+**Workflow File:** `.github/workflows/test.yml`
+**Trigger:** Push and pull requests to main/develop branches
+
+## Academic References
+
+### 6. Object-Oriented Programming Principles
+The application follows OOP principles including encapsulation, inheritance, and polymorphism.
+
+**Reference:** Schildt, H. (2022). *Java: The Complete Reference* (12th ed.). McGraw-Hill.
+**Chapters Referenced:** 
+- Chapter 6: Introducing Classes
+- Chapter 8: Inheritance
+- Chapter 9: Packages and Interfaces
+
+### 7. Software Testing Best Practices
+
+**Reference:** Osherove, R. (2020). *The Art of Unit Testing* (3rd ed.). Manning Publications.
+**Key Concepts:**
+- Test-Driven Development (TDD)
+- Arrange-Act-Assert pattern
+- Test naming conventions
+
+### 8. Clean Code Principles
+
+**Reference:** Martin, R.C. (2009). *Clean Code: A Handbook of Agile Software Craftsmanship*. Pearson Education.
+**Principles Applied:**
+- Meaningful variable names
+- Small, focused methods
+- Single Responsibility Principle
+
+## Tool References
+
+### 9. Development Environment
+- **IDE:** Apache NetBeans 12.0 or later
+- **Java Version:** JDK 17 or later
+- **Build Tool:** Native NetBeans build system
+
+### 10. Dependencies
+| Dependency | Version | Purpose |
+|------------|---------|---------|
+| org.json | 20230227 | JSON file storage |
+| JUnit Jupiter | 5.9.0 | Unit testing |
+| Java Regex | Java 17 | Pattern matching |
+
+## Code Attribution
+
+### Cell Phone Validation Regex
+```java
+// Regex pattern adapted from Java Regex documentation
+// Source: https://docs.oracle.com/javase/tutorial/essential/regex/
+String regex = "^\\+27[0-9]{9}$";
