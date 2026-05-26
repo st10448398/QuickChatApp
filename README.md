@@ -206,25 +206,25 @@ Module	PROG5121 - Programming 1A
 Assignment	POE Part 2
 Institution	ROSEBANK INTERNATIONAL
 ✅ Completion Checklist
-Part 1: Registration and Login Feature
+-Part 1: Registration and Login Feature
 
-Part 2: Sending Messages Feature
+-Part 2: Sending Messages Feature
 
-Unit Tests (23 tests covering all functionality)
+-Unit Tests (23 tests covering all functionality)
 
-Git Version Control Setup
+-Git Version Control Setup
 
-GitHub Repository Created
+-GitHub Repository Created
 
-JSON Storage Implementation
+-JSON Storage Implementation
 
-README Documentation Complete
+-README Documentation Complete
 
-References Document Created
+-References Document Created
 
-LICENSE File Added
+-LICENSE File Added
 
-.gitignore Configured
+-.gitignore Configured
 
 Last Updated: 2026
 Version: 2.0
