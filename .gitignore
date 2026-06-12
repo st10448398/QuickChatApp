@@ -8,3 +8,5 @@ echo nbproject/ >> .gitignore
 echo nb-configuration.xml >> .gitignore
 echo # Logs >> .gitignore
 echo *.log >> .gitignore
+nbproject/ 
+target/ 
