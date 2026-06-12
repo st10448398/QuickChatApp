@@ -92,4 +92,5 @@ public class LogIn {
     public String getStoredCellNumber() { return storedCellNumber; }
     public String getFirstName() { return firstName; }
     public String getLastName() { return lastName; }
+
 }
