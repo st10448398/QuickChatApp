@@ -19,6 +19,16 @@ public class Message {
         this.status = "pending";
     }
     
+    public Message(String messageID, int messageNumber, String recipient, 
+                   String messageText, String messageHash, String status) {
+        this.messageID = messageID;
+        this.messageNumber = messageNumber;
+        this.recipient = recipient;
+        this.messageText = messageText;
+        this.messageHash = messageHash;
+        this.status = status;
+    }
+    
     private String generateMessageID() {
         Random rand = new Random();
         long id = 1000000000L + (long)(rand.nextDouble() * 9000000000L);

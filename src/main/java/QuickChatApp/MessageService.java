@@ -15,13 +15,16 @@ public class MessageService {
     private int totalMessagesSent;
     private Scanner scanner;
     private boolean isLoggedIn;
+    private MessageStorage messageStorage;
     
     public MessageService(boolean loggedInStatus) {
         this.messages = new ArrayList<>();
         this.totalMessagesSent = 0;
         this.scanner = new Scanner(System.in);
         this.isLoggedIn = loggedInStatus;
+        this.messageStorage = new MessageStorage();
         createJsonFileIfNotExists();
+        messageStorage.loadStoredMessagesFromJSON();
     }
     
     private void createJsonFileIfNotExists() {
@@ -182,6 +185,7 @@ public class MessageService {
         System.out.println(sendResult);
         if (message.getStatus().equals("sent") || message.getStatus().equals("stored")) {
             messages.add(message);
+            messageStorage.addMessage(message);
         }
         if (message.getStatus().equals("sent")) {
             displayMessageDetails(message);
@@ -191,4 +195,5 @@ public class MessageService {
     
     public List<Message> getMessages() { return messages; }
     public boolean isLoggedIn() { return isLoggedIn; }
+    public MessageStorage getMessageStorage() { return messageStorage; }
 }
