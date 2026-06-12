@@ -3,6 +3,7 @@ package QuickChatApp;
 import java.util.Scanner;
 import java.util.List;
 
+
 public class Main {
     
     private static LogIn loginSystem = new LogIn();

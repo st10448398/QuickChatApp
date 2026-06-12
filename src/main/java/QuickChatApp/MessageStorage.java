@@ -8,6 +8,7 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+
 public class MessageStorage {
     private List<Message> sentMessages;
     private List<Message> disregardedMessages;

@@ -2,6 +2,7 @@ package QuickChatApp;
 
 import java.util.Random;
 
+
 public class Message {
     private String messageID;
     private int messageNumber;
