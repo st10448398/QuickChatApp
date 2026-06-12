@@ -7,7 +7,7 @@
 | **Author** | KD MACATE |
 | **Student Number** | ST10449398 |
 | **Module Code** | PROG5121 |
-| **Assignment** | POE Part 2 |
+| **Assignment** | POE Part 3 (Final) |
 | **Module Name** | Programming 1A |
 | **Institution** | ROSEBANK INTERNATIONAL |
 | **Date** | 2026 |
@@ -19,14 +19,17 @@
 2. [Features](#features)
 3. [Part 1: Registration & Login](#part-1-registration--login)
 4. [Part 2: Sending Messages](#part-2-sending-messages)
-5. [References](#references)
-6. [License](#license)
+5. [Part 3: Store Data & Display Reports](#part-3-store-data--display-reports)
+6. [Technology Stack](#technology-stack)
+7. [Testing](#testing)
+8. [References](#references)
+9. [License](#license)
 
 ---
 
 ## 🎯 Project Overview
 
-**ChatApp** is a Java-based messaging application developed as part of the PROG5121 Programming 1A POE. The application provides a complete user registration, login, and messaging system with a focus on clean code, comprehensive testing, and professional software development practices.
+**ChatApp** is a Java-based messaging application developed as part of the PROG5121 Programming 1A POE. The application provides a complete user registration, login, messaging system, and data management features with a focus on clean code, comprehensive testing, and professional software development practices.
 
 ### Key Objectives:
 - ✅ Implement OOP principles
@@ -35,6 +38,8 @@
 - ✅ Implement unit testing with JUnit
 - ✅ Automate tests using GitHub Actions
 - ✅ Store data using JSON file format
+- ✅ Implement arrays for data management
+- ✅ Create search and delete functionality
 
 ---
 
@@ -49,13 +54,14 @@
 - ✓ Auto-generated Message IDs (10-digit)
 - ✓ Auto-generated Message Hashes
 - ✓ JSON file storage for messages
+- ✓ Arrays for sent, stored, and disregarded messages
+- ✓ Search messages by recipient
+- ✓ Search messages by ID
+- ✓ Delete messages by hash
+- ✓ Display longest stored message
+- ✓ Full report generation
 - ✓ Menu-driven interface
-- ✓ Comprehensive unit tests
-
-### Features in Development:
-- 🔄 Show recently sent messages (Coming Soon)
-- 🔄 Message deletion functionality
-- 🔄 Multiple user support
+- ✓ Comprehensive unit tests (34 tests)
 
 ---
 
@@ -81,17 +87,6 @@ Users must register with the following details:
 - Maximum 3 login attempts allowed
 - Success message: *"Welcome [first name], [last name] it is great to see you again"*
 
-### Registration & Login Methods
-
-| Method Name | Functionality |
-|-------------|---------------|
-| `checkUserName()` | Validates username format |
-| `checkPasswordComplexity()` | Validates password strength |
-| `checkCellPhoneNumber()` | Validates SA cell number |
-| `registerUser()` | Handles user registration |
-| `loginUser()` | Verifies login credentials |
-| `returnLoginStatus()` | Returns login result message |
-
 ---
 
 ## 💬 Part 2: Sending Messages
@@ -102,8 +97,6 @@ After successful login, users see:
 Welcome to QuickChat
 ==================================================
 How many messages do you wish to enter? _
-
-text
 
 ### Message Structure
 
@@ -121,15 +114,12 @@ The message hash follows this pattern:
 [First 2 digits of Message ID]:[Message Number]:[First Word][Last Word]
 Example: 00:0:HITONIGHT?
 
-text
-
 ### Menu Options
 --- MENU ---
 Option 1) Send Messages
 Option 2) Show recently sent messages
-Option 3) Quit
-
-text
+Option 3) Stored Messages
+Option 4) Quit
 
 ### Message Actions
 
@@ -138,6 +128,37 @@ text
 | 1 | Send Message | "Message successfully sent" |
 | 2 | Disregard Message | "Press 0 to delete the message" |
 | 3 | Store Message | "Message successfully stored" + JSON save |
+
+---
+
+## 📊 Part 3: Store Data & Display Reports
+
+### Arrays Implemented
+
+| Array | Contents |
+|-------|----------|
+| Sent Messages | Contains all messages sent |
+| Disregarded Messages | Contains all messages that were disregarded |
+| Stored Messages | Messages loaded from JSON file |
+--- STORED MESSAGES MENU ---
+a) Display sender and recipient of all stored messages
+b) Display the longest stored message
+c) Search for a message by ID
+d) Search for all messages by recipient
+e) Delete a message by hash
+f) Display full report
+g) Back to main menu
+
+### Features Explained
+
+| Feature | Description |
+|---------|-------------|
+| **Display Sender & Recipient** | Shows all stored messages with sender and recipient info |
+| **Longest Message** | Finds and displays the longest stored message |
+| **Search by ID** | Finds a specific message using its unique ID |
+| **Search by Recipient** | Finds all messages sent to a specific recipient |
+| **Delete by Hash** | Removes a message using its unique hash value |
+| **Full Report** | Displays complete details of all stored messages |
 
 ---
 
@@ -153,86 +174,133 @@ text
 | **GitHub Actions** | N/A | CI/CD automation |
 | **NetBeans** | 12.0+ | IDE |
 
-📚 References
-For a complete list of references, see REFERENCES.md
+---
 
-Key References:
+## 🧪 Testing
 
--JSON-java Library - JSON implementation for message storage
+### Test Results
 
--JUnit 5 Documentation - Unit testing framework
+| Test Class | Tests Run | Status |
+|------------|-----------|--------|
+| LogInTest | 14 | ✅ All Passing |
+| MessageServiceTest | 11 | ✅ All Passing |
+| MessageStorageTest | 9 | ✅ All Passing |
+| **TOTAL** | **34** | **✅ ALL PASSING** |
 
--Git Documentation - Version control system
+### Test Coverage Includes:
+- ✓ Username validation (4 tests)
+- ✓ Password complexity (4 tests)
+- ✓ Cell phone validation (4 tests)
+- ✓ Login functionality (2 tests)
+- ✓ Message length (2 tests)
+- ✓ Recipient validation (2 tests)
+- ✓ Message hash generation (2 tests)
+- ✓ Message options (3 tests)
+- ✓ Array population (2 tests)
+- ✓ Search functionality (2 tests)
+- ✓ Delete functionality (1 test)
+- ✓ Report generation (2 tests)
 
--GitHub Actions Docs - CI/CD pipeline automation
+---
 
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📚 References
 
-License Type	MIT License
-Author	KD MACATE
-Student Number	ST10449398
-Module	PROG5121 - Programming 1A
-Assignment	POE Part 2
-Year	2026
-Usage	Educational purposes only
-You are free to:
-✅ Use this code for learning purposes
+For a complete list of references, see [REFERENCES.md](REFERENCES.md)
 
-✅ Reference this code in academic work
+### Key References:
+- **Oracle Java Documentation** - Regex patterns for validation
+- **JSON-java Library** - JSON implementation for message storage
+- **JUnit 5 Documentation** - Unit testing framework
+- **Git Documentation** - Version control system
+- **GitHub Actions Docs** - CI/CD pipeline automation
 
-✅ Share this code with attribution
+---
 
-You may NOT:
-❌ Submit this code as your own work
+## 📝 License
 
-❌ Use for commercial purposes without permission
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-❌ Remove attribution to the original author
+| **License Type** | MIT License |
+|-----------------|-------------|
+| **Author** | KD MACATE |
+| **Student Number** | ST10449398 |
+| **Module** | PROG5121 - Programming 1A |
+| **Assignment** | POE Part 3 (Final) |
+| **Year** | 2026 |
+| **Usage** | Educational purposes only |
 
-🙏 Acknowledgments
-Module instructors for guidance and support
+### You are free to:
+- ✅ Use this code for learning purposes
+- ✅ Reference this code in academic work
+- ✅ Share this code with attribution
 
-Open source community for JSON library
+### You may NOT:
+- ❌ Submit this code as your own work
+- ❌ Use for commercial purposes without permission
+- ❌ Remove attribution to the original author
 
-GitHub for free student developer pack
+---
 
-Stack Overflow community for technical solutions
+## 🙏 Acknowledgments
 
-📧 Contact
-Author	KD MACATE
-Student Number	ST10449398
-Module	PROG5121 - Programming 1A
-Assignment	POE Part 2
-Institution	ROSEBANK INTERNATIONAL
-✅ Completion Checklist
--Part 1: Registration and Login Feature
+- Module instructors for guidance and support
+- Oracle for Java documentation
+- Open source community for JSON library
+- GitHub for free student developer pack
+- Stack Overflow community for technical solutions
 
--Part 2: Sending Messages Feature
+---
 
--Unit Tests (23 tests covering all functionality)
+## 📧 Contact
 
--Git Version Control Setup
+| **Author** | KD MACATE |
+|------------|-----------|
+| **Student Number** | ST10449398 |
+| **Module** | PROG5121 - Programming 1A |
+| **Assignment** | POE Part 3 (Final) |
+| **Institution** | ROSEBANK INTERNATIONAL |
 
--GitHub Repository Created
+---
 
--JSON Storage Implementation
+## ✅ Completion Checklist
 
--README Documentation Complete
+- [x] Part 1: Registration and Login Feature
+- [x] Part 2: Sending Messages Feature
+- [x] Part 3: Store Data and Display Reports
+- [x] Arrays for message management
+- [x] Search by recipient functionality
+- [x] Search by ID functionality
+- [x] Delete by hash functionality
+- [x] Longest message display
+- [x] Full report generation
+- [x] Unit Tests (34 tests covering all functionality)
+- [x] Git Version Control Setup
+- [x] GitHub Repository Created
+- [x] GitHub Actions CI/CD Pipeline
+- [x] JSON Storage Implementation
+- [x] README Documentation Complete
+- [x] References Document Created
+- [x] LICENSE File Added
+- [x] .gitignore Configured
 
--References Document Created
+---
 
--LICENSE File Added
+**Last Updated:** 2026
+**Version:** 3.0
+**Status:** ✅ Complete and Fully Functional
 
--.gitignore Configured
+---
 
-Last Updated: 2026
-Version: 2.0
-Status: ✅ Complete and Fully Functional
+## 🎓 Declaration
 
-🎓 Declaration
-I hereby declare that this project is my original work. All external libraries and references have been properly cited. This project was completed as part of PROG5121 Programming 1A POE Part 2.
+I hereby declare that this project is my original work. All external libraries and references have been properly cited. This project was completed as part of PROG5121 Programming 1A POE Part 3 (Final).
 
-Signed: KD MACATE
-Student Number: ST10449398
-Date: 2026
+**Signed:** KD MACATE
+
+**Student Number:** ST10449398
+
+**Date:** 2026
+| Message Hashes | Contains all message hashes |
+| Message IDs | Contains all message IDs |
+
+### Stored Messages Menu Options
